@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1b006903a5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logosaurya.png" class="logo">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software engineer</p>
+                <h1>Hi, I'm <span> saurya </span><br>from india</h1>
+            </div>
+            <div class="backgroundimage">
+                
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------about--------------------------------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/saurya.jpeg.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <H1 class="sub-title">About me</H1><br>
+                    <p class="para">Hello! I'm Saurya Pratap Singhy, a passionate Computer Science Engineering student currently pursuing my education at Oriental Institute of Science and Technology, Bhopal. With a strong foundation in programming and web development, I thrive on solving complex problems and exploring innovative solutions. My dedication to learning and adapting to new technologies has helped me achieve a commendable CGPA of 8.54.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab ('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab ('experience')">Experience </p>
+                        <p class="tab-links" onclick="opentab ('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web interfaces</li>
+                            <li><span>Web development</span><br>web App Development</li>
+                            <li><span>Database management with SQL</span><br>Design efficient data-driven solutions.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                             <li><span>2022</span> <br>Intern at oasis infobyte</li>
+                             <li><span>2023</span> <br>Intern at persistent martian program</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017 matriculation</span><br>D.A.V Public School</li>
+                            <li><span>2017-2019 Intermediate</span><br>T.V.N Varanasi</li>
+                            <li><span>2020-2024 B-Tech</span><br>O.I.S.T Bhopal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------projects--------------------------------------------------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">MY PROJECTS</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <h2>PORTFOLIO</h2>
+                    <p> Developed a comprehensive portfolio showcasing proficiency in front-end web development technologies including HTML, CSS, and JavaScript
+                        Utilized responsive design principles to create a visually appealing and user-friendly interface. Implemented dynamic features and interactive elements to enhance user experience and engagement.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div> 
+                <div>
+                    <i class="fa-solid fa-ice-cream"></i>
+                    <h2>HAWKERS AT DOOR</h2>
+                    <p> Implemented an online platform enabling residents to conveniently order food and essentials directly from hawkers.
+                        Coordinated hawker onboarding, training, and promotional campaigns.
+                        Sustained livelihoods, fostered community engagement, and promoted local culture.
+                        Recognized for positive impact and served as a model for other communities. 
+                    </p>
+                    <a href="#">Learn more</a>
+                </div> 
+                <div>
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <h2>BANK MANAGEMENT SYSTEM</h2>
+                    <p> Designed systems to streamline banking operations, enhance customer experience, and ensure regulatory compliance.
+                        This system facilitated efficient and secure financial operations, including customer accounts management, transaction processing, and regulatory compliance.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------portfolio------------------------------------------------------ -->
+    <div id="portfolio">
+       <div class="container">
+        <h1 class="sub-title"> MY WORK</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+            </div>
+        </div>
+       </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents"); 
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
+               tablink.classList.remove("active-link");
+             }
+             for (var tabcontent of tabcontents) {
+               tabcontent.classList.remove("active-tab");
+             } 
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+         }
+
+    </script>
+      
+</body>
+</html>
